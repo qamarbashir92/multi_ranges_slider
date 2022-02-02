@@ -1,0 +1,325 @@
+/*NEW SLIDER STYLES FOR SCALE, ETC*/
+
+/* slider widget */
+
+.ui-slider {
+    text-decoration: none !important;
+}
+.ui-slider .ui-slider-handle {
+    overflow: visible !important;
+}
+.ui-slider .ui-slider-tooltip {
+    display: none;
+}
+.ui-slider .ui-state-active .ui-slider-tooltip,
+.ui-slider .ui-state-focus .ui-slider-tooltip,
+.ui-slider .ui-state-hover .ui-slider-tooltip {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    padding: .2em;
+    font-size: .9em;
+    width: 14em;
+    /*width: auto;*/
+    margin-left: -4em;
+}
+.ui-slider a {
+    text-decoration: none;
+}
+.ui-slider ol,
+.ui-slider li,
+.ui-slider dl,
+.ui-slider dd,
+.ui-slider dt {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ui-slider ol,
+.ui-slider dl {
+    position: relative;
+    top: 1.3em;
+    width: 100%;
+}
+.ui-slider dt {
+    top: 1.5em;
+    position: absolute;
+    padding-top: .2em;
+    text-align: center;
+    border-bottom: 1px dotted #ddd;
+    height: .7em;
+    color: #999;
+}
+.ui-slider dt span {
+    background: #fff;
+    padding: 0 .5em;
+}
+.ui-slider li,
+.ui-slider dd {
+    position: absolute;
+    overflow: visible;
+    color: #666;
+}
+.ui-slider li span.ui-slider-label,
+.ui-slider dd span.ui-slider-label {
+    display: none;
+}
+.ui-slider li span.ui-slider-label-show,
+.ui-slider dd span.ui-slider-label-show {
+    display: block;
+}
+.ui-slider span.ui-slider-tic {
+    position: absolute;
+    left: 0;
+    height: .8em;
+    top: -1.3em;
+}
+.ui-slider li span.ui-widget-content,
+.ui-slider dd span.ui-widget-content {
+    border-right: 0;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+}
+.ui-slider .first .ui-slider-tic,
+.ui-slider .last .ui-slider-tic {
+    display: none;
+}
+.slider {
+    margin-bottom: 50px;
+    width: 100%;
+    float: left;
+}
+.slider.sleep {
+    background: #28B463;
+}
+.slider-controller {
+    padding-top: 0;
+}
+.slider-controller select {
+    width: 100px;
+}
+.ui-slider-handle.minimum,
+a[data-temperature="minimum"],
+.ui-slider-range.minimum {
+    background: #a3e5f4;
+}
+.ui-slider-handle.saving,
+a[data-temperature="saving"],
+.ui-slider-range.saving {
+    background: #f2e079;
+}
+.ui-slider-handle.comfort,
+a[data-temperature="comfort"],
+.ui-slider-range.comfort {
+    background: #e6a235;
+}
+/*ranges back color*/
+.ui-slider-handle.r4,
+a[data-temperature="r4"],
+.ui-slider-range.r4 {
+    background: #28B463;
+}
+.ui-slider-handle.r2,
+a[data-temperature="r2"],
+.ui-slider-range.r2 {
+    background: #2E86C1;
+}
+.ui-slider-handle.r3,
+a[data-temperature="r3"],
+.ui-slider-range.r3 {
+    background: #E5E7E9;
+}
+.ui-slider-handle.r1,
+a[data-temperature="r1"],
+.ui-slider-range.r1 {
+    background: #F4D03F;
+}
+.temperature-r1 {
+    background-color: #F4D03F;
+    color: #F4D03F;
+}
+.temperature-r2 {
+    background-color: #2E86C1 ;
+}
+.temperature-r3 {
+    background-color: #E5E7E9;
+    color: #fff;
+}
+.temperature-r4 {
+    background-color: #28B463 ;
+}
+/*ranges back color*/
+
+.temperatures input {
+    text-align: right;
+}
+.slider-tick-mark-main {
+    /*display: inline-block;*/
+    /*width: 1px;*/
+    /*background: #bbb;*/
+    /*height: 7px;*/
+    /*position: absolute;*/
+    /*top: 15px;*/
+    /*font-size: 11px;*/
+    /*qb*/
+    display: inline-block;
+    width: 1px;
+    background: #000000;
+    height: 50px;
+    position: relative;
+    top: -52px;
+    font-size: 12px;
+    z-index: 3;
+}
+.slider-tick-mark-main-text {
+    /*display: inline-block;*/
+    /*width: 20px;*/
+    /*height: 10px;*/
+    /*position: absolute;*/
+    /*top: 25px;*/
+    /*font-size: 11px;*/
+    /*text-align: center;*/
+    /*margin-left: -9px;*/
+
+    /*qb*/
+    display: inline-block;
+    width: 25px;
+    height: 12px;
+    position: absolute;
+    top: 38px;
+    font-size: 11px;
+    text-align: center;
+    margin-left: -9px;
+}
+.slider-tick-mark-side {
+    /*display: inline-block;*/
+    /*width: 1px;*/
+    /*background: #ccc;*/
+    /*height: 5px;*/
+    /*position: absolute;*/
+    /*top: 15px;*/
+
+    /*qb*/
+    display: inline-block;
+    width: 1px;
+    background: #000000;
+    height: 19px;
+    position: relative;
+    top: -69px;
+    z-index: 3;
+}
+.slider-tick-mark-side-text {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 25px;
+    font-size: 9px;
+    text-align: center;
+    margin-left: -9px;
+}
+.slider-tick-mark-side_current {
+    /*display: inline-block;*/
+    /*width: 1px;*/
+    /*background: #ccc;*/
+    /*height: 5px;*/
+    /*position: absolute;*/
+    /*top: 15px;*/
+
+    /*qb*/
+    display: inline-block;
+    width: 2px;
+    background: red;
+    height: 29px;
+    position: relative;
+    top: -65px;
+    z-index: 3;
+}
+.slider span.ui-slider-tooltip {
+    width: auto;
+}
+
+hr.slider_line {
+    border-top: 2px solid #000000;
+    /* display: inline-block; */
+    position: relative;
+    top: -8px;
+    z-index: 3;
+}
+
+.ticks{
+    width: 100%;
+    /*float: left;*/
+}
+
+
+/*div arrow*/
+.float-left-box {
+    float: left; padding: 15px 0 0 45px;
+}
+
+/***************** PARAMS SECTION ******************/
+/* horizontal arrows */
+.line-horizontal {
+    height: 2px;    /* line width */
+    width: 135px; /* line length */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/* vertical arrows */
+.line-vertical {
+    width: 2px; /* line-width */
+    height: 75px; /* line length */
+    margin-left: 20px;
+    margin-top: 35px;
+    float: left;
+}
+
+/*********************** CSS *************************/
+/* common arrow styles */
+.line-vertical, .line-horizontal {
+    position: relative;
+    background: #aaa;
+}
+.arrow-up:after,
+.arrow-down:before,
+.arrow-left:after,
+.arrow-right:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 5px solid transparent;
+}
+
+/* vertical arrows */
+.arrow-up:after,
+.arrow-down:before {
+    left: -4px;
+}
+.arrow-up:after {
+    top: -15px;
+    border-bottom: 15px solid #aaa;
+}
+.arrow-down:before {
+    bottom: -15px;
+    border-top: 15px solid #aaa;
+}
+
+/* horizontal arrows */
+.arrow-left:after,
+.arrow-right:before {
+    top: -4px;
+}
+.arrow-left:after {
+    left: -15px;
+    border-right: 15px solid #aaa;
+}
+.arrow-right:before {
+    right: -15px;
+    border-left: 15px solid #aaa;
+}
+/*div arrow end*/

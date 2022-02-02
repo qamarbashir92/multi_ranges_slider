@@ -1,0 +1,49 @@
+
+/*// arrow in HR line*/
+/*// Choose your preferences*/
+$page-color: #FFCFB9;
+$arrow-color: #0af;
+$arrow-size: 3px;
+
+
+
+// Where the magic happens
+.arrow {
+  max-width: 20em;
+  height: $arrow-size * 2;
+  margin: 1em auto;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(
+                  $page-color $arrow-size - $arrow-size / 3,
+                  $arrow-color $arrow-size - $arrow-size / 3,
+                  $arrow-color $arrow-size + $arrow-size / 3,
+                  $page-color $arrow-size + $arrow-size / 3
+  );
+}
+
+.arrow:before,
+.arrow:after {
+  content: "";
+  position: absolute;
+}
+
+.arrow:before {
+  margin: $arrow-size 0;
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 $arrow-size $page-color,
+  0 0 0 $arrow-size + $arrow-size / 3 $arrow-color,
+  0 0 0 $arrow-size + $arrow-size / 3 * 2 $page-color,
+  0 0 0 $arrow-size + $arrow-size / 3 * 3 $arrow-color,
+  0 0 0 $arrow-size + $arrow-size / 3 * 4 $page-color,
+  0 0 0 $arrow-size + $arrow-size / 3 * 5 $arrow-color;
+}
+
+.arrow:after {
+  right: -$arrow-size;
+  border: $arrow-size solid;
+  border-color: $page-color $page-color $page-color $arrow-color;
+}
+
+/*arrow end HR*/
