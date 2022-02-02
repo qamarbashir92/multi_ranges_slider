@@ -7,3 +7,8 @@
 
 # scale bar also showing current date as red tick.
 #
+
+html div
+<div class="slider sleep" id="slider"></div>
+JS script to call
+front_slider_script_fn('#slider',null,date1,date2,true);
